@@ -100,6 +100,15 @@ header.masthead-min h1 {
   }
 }
 
+.test{
+  border: 0px solid #ced4da;
+  text-align: center;
+  border-bottom: 1px solid #ced4da;
+  font-size: 2em;
+}
+
+
+
 
 /*
   Bootstrap NAVBAR CSS override for fixed and transparency
@@ -109,6 +118,7 @@ header.masthead-min h1 {
     position: absolute;
     width: 100%;
     background-color: transparent !important;
+    
   }
 
 /*
@@ -134,7 +144,7 @@ header.masthead-min h1 {
   
   /*
   Styling for Simple typer
-*/
+  */
 
 
 
@@ -155,11 +165,32 @@ header.masthead-min h1 {
 
 
 
-  .btn-pill{
+  .btn-pill1{
     background-color: #555;
+    border-radius: 500px;
+    padding: 1em 5em 1em 5em;
+    margin-right: 2em;
+
+    /*
+    Styling for Text inside Pill Button1
+    */
+    font-weight: 700;
+    color: #fff
   }
 
 
+  .btn-pill2{
+    background-color: #555;
+    border-radius: 500px;
+    padding: 1em 5em 1em 5em;
+    margin-left: 2em;
+
+      /*
+    Styling for Text inside Pill Button2
+    */
+    font-weight: 700;
+    color: #fff
+  }
 
 
 
@@ -209,11 +240,36 @@ and (max-device-width : 480px) {
   display: none;
 }
 
-.btn-pill{
+
+.btn-pill1{
+  background-color: #555;
+  border-radius: 500px;
+  padding: 1em 5em 1em 5em;
+  margin-right: 0em;
   display: block;
+
+  /*
+  Styling for Text inside Pill Button1
+  */
+  font-weight: 700;
+  color: #fff
 }
 
 
+.btn-pill2{
+  background-color: #555;
+  border-radius: 500px;
+  padding: 1em 5em 1em 5em;
+  margin-left: 0em;
+  display: block;
+  margin-top:2em;
+
+    /*
+  Styling for Text inside Pill Button2
+  */
+  font-weight: 700;
+  color: #fff
+}
 
 .mobile-font-change{
   font-size: 1.1em;
