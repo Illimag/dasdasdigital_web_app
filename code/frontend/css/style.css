@@ -100,14 +100,30 @@ header.masthead-min h1 {
   }
 }
 
-.test{
+.text-input-custom{
   border: 0px solid #ced4da;
   text-align: center;
   border-bottom: 1px solid #ced4da;
-  font-size: 2em;
+  font-size: 1.3em;
+
+  margin-left: auto ;
+  margin-right: auto ;
+
 }
 
+.custom-file-input-custom{
 
+  right: 50%;
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 10em;
+
+}
+
+.form-check-inline{
+  display: block !important;
+  text-align: left;
+}
 
 
 /*
@@ -164,6 +180,20 @@ header.masthead-min h1 {
 
 
 
+.btn-pill{
+  background-color: #555;
+  border-radius: 500px;
+  padding: 1em 5em 1em 5em;
+
+
+  /*
+  Styling for Text inside Pill Button1
+  */
+  font-weight: 700;
+  color: #fff
+}
+
+
 
   .btn-pill1{
     background-color: #555;
@@ -193,7 +223,10 @@ header.masthead-min h1 {
   }
 
 
-
+.button-text-custom{
+  font-size: 1.3em;
+  padding: .5em 6em .5em 6em;
+}
 
 
 
@@ -220,6 +253,36 @@ header.masthead-min h1 {
 .account-tab{
   flex-direction: row !important;
 }
+
+
+/* 
+  Form Styling
+*/
+
+.form-main-title{
+  font-size: 5rem
+}
+
+.form-undermain-title{
+  font-size: 2rem
+}
+
+
+
+/* Footer */
+
+
+
+.list-unstyled{
+  text-align: left;
+  font-weight: 700
+}
+
+
+.footer-copyright{
+  font-weight: 700
+}
+
 
 
 /* Media Queries*/
@@ -273,6 +336,33 @@ and (max-device-width : 480px) {
 
 .mobile-font-change{
   font-size: 1.1em;
+}
+
+.form-main-title{
+  font-size: 4em;
+}
+
+.form-undermain-title{
+  font-size: 1.2em;
+}
+
+.form-title-custom{
+  font-size: 1.2em;
+}
+
+.text-input-custom{
+
+  font-size: 1em;
+
+
+}
+
+.custom-select{
+  width: 90%;
+}
+
+.form-check-mobile-custom{
+  font-size: .9em;
 }
 
 }
