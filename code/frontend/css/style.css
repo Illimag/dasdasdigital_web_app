@@ -231,6 +231,18 @@ header.masthead-min h1 {
 
 
 
+/* Card Styling*/
+
+.remove-border-card-custom{
+  border: 0px solid rgba(0,0,0,.125);
+}
+
+
+.card-img-top:hover{
+  box-shadow: 0px 0px 10px blue;
+  transition: 500ms ease-out .3s;
+  transition-delay: .1s;
+}
   
 /*
   Bootstrap NAVBAR mobile CSS override for background color and z-index
@@ -253,6 +265,28 @@ header.masthead-min h1 {
 .account-tab{
   flex-direction: row !important;
 }
+
+
+.remove-border-list-group{
+  border: 0px solid rgba(0,0,0,.125);
+}
+
+
+.list-group-item.active{
+  border-radius: 500px;
+  background-color: #555;
+  border-color: #555;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* 
@@ -281,6 +315,12 @@ header.masthead-min h1 {
 
 .footer-copyright{
   font-weight: 700
+}
+
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 
@@ -363,6 +403,17 @@ and (max-device-width : 480px) {
 
 .form-check-mobile-custom{
   font-size: .9em;
+}
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* Fixed card image bug in mobile*/
+
+.card-img-top{
+  display: inline-block;
 }
 
 }
