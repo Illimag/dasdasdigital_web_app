@@ -272,18 +272,28 @@ header.masthead-min h1 {
 }
 
 
-.list-group-item.active{
+
+
+.add-pill-btn-styling.active{
   border-radius: 500px;
   background-color: #555;
   border-color: #555;
   font-weight: 700;
 }
 
+.add-invoice-btn-styling{
+  font-size: 2em;
+}
 
-
-
-
-
+.add-invoice-btn-styling.active{
+  border-radius: 500px;
+  background-color: transparent;
+  border-color: #555;
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
+  border: 1px solid rgba(0,0,0,.8);
+}
 
 
 
@@ -322,6 +332,15 @@ header.masthead-min h1 {
   margin-right: 0px;
   margin-left: 0px;
 }
+
+
+.fill-width-border-custom{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+
 
 
 
@@ -415,26 +434,34 @@ and (max-device-width : 480px) {
 .card-img-top{
   display: inline-block;
 }
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
 /* Styles */
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
 /* iPads (landscape) ----------- */
 @media only screen 
@@ -442,7 +469,9 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
 /* iPads (portrait) ----------- */
 @media only screen 
@@ -450,17 +479,23 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
-
+.full-screen-container-custom{
+  max-width:none !important;
+}
 }
