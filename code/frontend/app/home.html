@@ -32,6 +32,60 @@
 
     <link rel="stylesheet" href="../css/style.css"  type="text/css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script>
+    /* 
+    Simple Typer
+    https://codepen.io/gergobalogh/pen/gvrbeG
+    */
+    $(function() {
+    var index = 0,
+        count = 0;
+    var word = '';
+    var words = ["a Marketing Agency.", "a Design Agency.", "a HR Agency.", "an IT Agency.", "a Bay Area Local Agency.", "DASDAS Digital."];
+    untype();
+
+    function type(word) {
+        setTimeout(function() {
+            if (word.length > 0) {
+                $('.typer').append(word.shift());
+                type(word);
+            } else if (word.length === 0) {
+                pause();
+            }
+        }, 180)
+    }
+
+    function untype() {
+        setTimeout(function() {
+            word = $('.typer').html().split('');
+            word.pop();
+            if (word.length > 0) {
+                $('.typer').empty().append(word);
+                untype();
+            } else if (word.length === 0) {
+                $('.typer').empty();
+                nextWord();
+            }
+        }, 100);
+    }
+
+    function pause() {
+        setTimeout(function() {
+            untype();
+        }, 300);
+    }
+
+    function nextWord() {
+        index = count % 6;
+        count++;
+        word = words[index].split('');
+        type(word);
+    }
+});
+</script>
+
 </head>
 
 <body>
@@ -47,13 +101,13 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">ABOUT</a>
+                      <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">SHOP</a>
+                      <a class="nav-link" href="shop.html">SHOP</a>
                     </li>
                   </ul>
-                  <a href="#"><span class="navbar-text">
+                  <a href="account/invoices.html"><span class="navbar-text">
                     LOG IN
                   </span></a>
                 </div>
@@ -66,17 +120,22 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
-              <h3 class="text-uppercase text-white font-weight-bold">WELCOME TO</h3>
+              <h3 class="text-uppercase text-black font-weight-bold mobile-font-change">WELCOME TO</h3>
             </br>
-              <h1 class="text-uppercase text-white font-weight-bold">DASDAS DIGITAL</h1>
+              <h1 class="text-uppercase text-black font-weight-bold">DASDAS DIGITAL</h1>
             </br>
-              <h3 class="text-white font-weight-bold">We are a Multi-Lingual Agency</h3>
+              <h3 class="text-black font-weight-bold mobile-font-change">We are
+
+              <span class="typer" style="text-decoration:underline">a Multi-Lingual Agency</span>
+              <!-- add underline for typewriter effect-->
+              <span class="blink">_</span></h3>
+
             </br>
             </div>
             <div class="col-lg-8 align-self-baseline">
               <p class="text-white-75 font-weight-light mb-5">Copy that explains what we do, how we help, who we help, and what we oﬀer/our services. This section should be 1-3 sentences max as we want this to remain above the fold.</p>
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+              <a class="btn btn-pill js-scroll-trigger" href="#about">Take Survey</a>
+              <a class="btn btn-pill js-scroll-trigger" href="#about">Shop Packages</a>
             </div>
           </div>
         </div>
@@ -498,7 +557,7 @@
         <hr class="clearfix w-100 d-md-none pb-3">
 
         <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
+        <div class="col-md-3 mb-md-0 mb-3 mt-5">
 
             <!-- Links -->
 
@@ -507,10 +566,10 @@
                 <a href="#!">DASDAS Digital</a>
               </li>
               <li>
-                <a href="#!">ABOUT</a>
+                <a href="about.html">ABOUT</a>
               </li>
               <li>
-                <a href="#!">SHOP</a>
+                <a href="shop.html">SHOP</a>
               </li>
             </ul>
 
@@ -518,7 +577,7 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
+          <div class="col-md-3 mb-md-0 mb-3 mt-5">
 
             <!-- Links -->
 
@@ -541,7 +600,7 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 DASDAS DIGITAL. All Rights Reserved
+    <div class="footer-copyright text-center py-3 pb-5">© 2019 DASDAS DIGITAL. All Rights Reserved
     </div>
     <!-- Copyright -->
 
