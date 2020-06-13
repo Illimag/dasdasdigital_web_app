@@ -1,28 +1,15 @@
 # Das Das Digital
 
 ## Front End Technology Stack
+### REACT.JS
 ### HTML/CSS/Javascript
 ### Bootstrap 4.3.1
 ### jQuery 3.3.1
 
-# MVP Web Application Folder Structure
+## Local Deployment
 
-## FrontEnd/
-### app/
-- account/
-    - invoices.html
-- checkout/
-    - checkout.html
-    - purchase_confirmation.html
-- packages/
-    - writer.html
-- about.html
-- home.html
-- shop.html
-### css/
-- style.css
-### images/
-- plain-blue-5-x-3-flag-2481-p.png
-### js/
-- main.js
-### index.html
+npm start
+
+## New Mobile Design
+
+![New Mobile Design](DDD_mobile_design-01.jpg)

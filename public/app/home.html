@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+        <!-- 
+        ########################################
+        ########################################
+        ######      Das Das Digital      #######
+        ######      Agency Web App       #######
+        ########################################
+        ########################################
+        
+        Welcome.
+
+    -->
+<head>
+    <title>Das Das Digital</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+    <!-- 
+		Bootstrap CSS Dependency
+	-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css"  type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script>
+    /* 
+    Simple Typer
+    https://codepen.io/gergobalogh/pen/gvrbeG
+    */
+    $(function() {
+    var index = 0,
+        count = 0;
+    var word = '';
+    var words = ["a Marketing Agency.", "a Design Agency.", "a HR Agency.", "an IT Agency.", "a Bay Area Local Agency.", "DASDAS Digital."];
+    untype();
+
+    function type(word) {
+        setTimeout(function() {
+            if (word.length > 0) {
+                $('.typer').append(word.shift());
+                type(word);
+            } else if (word.length === 0) {
+                pause();
+            }
+        }, 180)
+    }
+
+    function untype() {
+        setTimeout(function() {
+            word = $('.typer').html().split('');
+            word.pop();
+            if (word.length > 0) {
+                $('.typer').empty().append(word);
+                untype();
+            } else if (word.length === 0) {
+                $('.typer').empty();
+                nextWord();
+            }
+        }, 100);
+    }
+
+    function pause() {
+        setTimeout(function() {
+            untype();
+        }, 300);
+    }
+
+    function nextWord() {
+        index = count % 6;
+        count++;
+        word = words[index].split('');
+        type(word);
+    }
+});
+</script>
+
+</head>
+
+<body>
+
+        <!-- 
+		Bootstrap NAVBAR
+        -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                <a class="navbar-brand" href="#">DASDAS DIGITAL</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">SHOP</a>
+                    </li>
+                  </ul>
+                  <a href="account/invoices.html"><span class="navbar-text">
+                    LOG IN
+                  </span></a>
+                </div>
+              </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+
+      <!-- Main  -->
+        <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+              <h3 class="text-uppercase text-black font-weight-bold mobile-font-change">WELCOME TO</h3>
+            </br>
+              <h1 class="text-uppercase text-black font-weight-bold">DASDAS DIGITAL</h1>
+            </br>
+              <h3 class="text-black font-weight-bold mobile-font-change">We are
+
+              <span class="typer" style="text-decoration:underline">a Multi-Lingual Agency</span>
+              <!-- add underline for typewriter effect-->
+              <span class="blink">_</span></h3>
+
+            </br>
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+              <p class="text-white-75 font-weight-light mb-5">Copy that explains what we do, how we help, who we help, and what we oﬀer/our services. This section should be 1-3 sentences max as we want this to remain above the fold.</p>
+              <a class="btn btn-pill1 js-scroll-trigger" href="#about">Take Survey</a>
+              <a class="btn btn-pill2 js-scroll-trigger" href="#about">Shop Packages</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Main END -->
+
+      <!-- Start of Form Container  -->
+      <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                          <h1 class="text text-black font-weight-bold mt-5 form-main-title">Let’s Get Started
+                            </h1>
+                        </br>
+                            <h3 class="text text-black font-weight-bold form-undermain-title">Take our Survey/Online Estimate Intake
+                                </h3>
+                        </br>
+
+                        <!-- Start of Form -->
+                        <form>
+
+                          <!-- Email -->
+                          <div class="form-group ">
+                            <h3 class="text text-black font-weight-bold mt-5 form-title-custom">What’s your name?
+                            </h3>
+                            <input type="text" class="form-control text-input-custom mt-5" placeholder="First and Last">
+                          </div>
+                          <!-- End -->
+
+                          <!-- Email -->
+                          <div class="form-group">
+                            <h3 class="text text-black font-weight-bold mt-5 form-title-custom">What do you do?
+                            </h3>
+                            <select multiple class="form-control mt-5" id="exampleFormControlSelect1">
+                              <option>I run a small businss.</option>
+                              <option>I run a startup.</option>
+                              <option>I freelance.</option>
+                              <option>I’m a lifestyle inﬂuencer.</option>
+                            </select>
+                          </div>
+                          <!-- Email -->
+
+                          <!-- Email -->
+                          <h3 class="text text-black font-weight-bold mt-5 form-title-custom">Pick a subcategory (if applicable:)
+                          </h3>
+                          <div class="container mt-5">
+                            <div class="row">
+                              <div class="col-sm">
+                                <fieldset class="form-group">
+
+                                  <div class="form-check form-check-inline testtest">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox1">Photographer</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox2">Videographer</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox3">Film Maker</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-sm">
+                                <fieldset class="form-group">
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox4">Writers</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox5">Designer</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox6">Other:</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-sm">
+                                <fieldset class="form-group">
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox7">Fine Artist</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox8">Software Engineer/Web Developer</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                          </div>
+                          
+
+
+
+
+                        <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">What tools/apps do you use?
+                        </h3>
+                        <div class="form-group mt-5">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">List all of the professional services you offer, if any:
+                        </h3>
+                        <div class="form-group mt-5">
+                          <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
+                        </div>
+                        <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">In what locations do you usually operate?
+                        </h3>
+                        <div class="form-group">
+                          <textarea class="form-control mt-5" id="exampleFormControlTextarea2" rows="5"></textarea>
+                        </div>
+                        <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">How long have you been practicing your craft?
+                        </h3>
+                        <input type="text" class="form-control text-input-custom mt-5" placeholder="Number of Years">
+                        <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">Are you currently earning income for your craft?
+                        </h3>
+                        <input type="text" class="form-control text-input-custom mt-5" placeholder="Range of Income">
+                        <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">Please describe your usual customers:
+                        </h3>
+                        <div class="form-group">
+                        <textarea class="form-control mt-5" id="exampleFormControlTextarea3" rows="5"></textarea>
+                        </div>
+                        <!-- Email -->
+
+                        
+                          <!-- Email -->
+                          <h3 class="text text-black font-weight-bold mt-5 form-title-custom">How do these customers contact you?
+                          </h3>
+                          <div class="container mt-5">
+                            <div class="row">
+                              <div class="col-sm">
+                                <fieldset class="form-group">
+
+                                  <div class="form-check form-check-inline testtest">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox1">At live performances</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox2">Linkedin</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox3">Facebook</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox3">Word of mouth</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-sm">
+                                <fieldset class="form-group">
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox4">Instagram</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox5">SnapChat</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox6">Youtube</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-sm">
+                                <fieldset class="form-group">
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox7">Other:</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox8">Online Jobsite</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                                    <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox8">Referrals from friends/family</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                          </div>
+                            <!-- Email -->
+
+                                                    <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">If you have a website, please put the address below:
+                          </h3>
+                          <input type="text" class="form-control text-input-custom mt-5" placeholder="https://www.example.com">
+                          <!-- Email -->
+
+                          <h3 class="text text-black font-weight-bold mt-5 form-title-custom">If you use social media, please list them below:
+                            </h3>
+                          <div class="form-group row mt-5">
+                              <select class="custom-select custom-select-lg mb-3 col-sm-3 text-input-custom">
+                                  <option selected>Select platform</option>
+                                  <option value="1">Facebook</option>
+                                  <option value="2">Youtube</option>
+                                  <option value="3">Instagram</option>
+                                </select>
+                              <div class="col-sm-9">
+                                <input type="email" class="form-control form-control-lg text-input-custom" id="colFormLabelSm" placeholder="Paste the URL or social media handle here">
+                              </div>
+                            </div>
+
+                          <div class="form-group row">
+                              <select class="custom-select custom-select-lg mb-3 col-sm-3 text-input-custom">
+                                  <option selected>Select platform</option>
+                                  <option value="1">Facebook</option>
+                                  <option value="2">Youtube</option>
+                                  <option value="3">Instagram</option>
+                                </select>
+                              <div class="col-sm-9">
+                                <input type="email" class="form-control form-control-lg text-input-custom" id="colFormLabelSm" placeholder="Paste the URL or social media handle here">
+                              </div>
+                            </div>
+
+                          <div class="form-group row">
+                              <select class="custom-select custom-select-lg mb-3 col-sm-3 text-input-custom">
+                                  <option selected>Select platform</option>
+                                  <option value="1">Facebook</option>
+                                  <option value="2">Youtube</option>
+                                  <option value="3">Instagram</option>
+                                </select>
+                              <div class="col-sm-9">
+                                <input type="email" class="form-control form-control-lg text-input-custom" id="colFormLabelSm" placeholder="Paste the URL or social media handle here">
+                              </div>
+                            </div>
+
+
+
+
+                                                  <!-- Email -->
+                                                  <fieldset class="form-group mt-5">
+                                                      <h3 class="text text-black font-weight-bold form-title-custom">What do you want to achieve with DasDas? Click all that apply:
+                                                      </h3>
+                                                      <div class="container mt-5">
+                                                          <div class="row">
+                                                            <div class="col">
+                          <!-- Email -->
+                          <fieldset class="form-group">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox11">Increase customers for my products</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox22" value="option22">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox22">Increase engagement on:</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox33" value="option33">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox33">Facebook</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox44" value="option44">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox44">Instagram</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox55" value="option55">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox55">Youtube</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox66" value="option66">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox66">SnapChat</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox77" value="option77">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox77">Twitter</label>
+                              </div>
+                            </fieldset>
+                            <!-- Email -->
+
+                                                            </div>
+                                                            <div class="col">
+                          <!-- Email -->
+                          <fieldset class="form-group">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox11">Increase customers for my professional services</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox22" value="option22">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox22">Increase followers on:</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox33" value="option33">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox33">Facebook</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox44" value="option44">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox44">Instagram</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox55" value="option55">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox55">Youtube</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox66" value="option66">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox66">SnapChat</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox77" value="option77">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox77">Twitter</label>
+                              </div>
+                            </fieldset>
+                            <!-- Email -->
+                                                            </div>
+                                                            <div class="w-100"></div>
+                                                            <div class="col">
+                          <!-- Email -->
+                          <fieldset class="form-group">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox11">Monetize or increase income on:</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox22" value="option22">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox22">Facebook</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox33" value="option33">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox33">Instagram</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox44" value="option44">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox44">Youtube</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox55" value="option55">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox55">Snapchat</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox66" value="option66">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox66">Twitter</label>
+                              </div>
+                            </fieldset>
+                            <!-- Email -->
+                                                            </div>
+                                                            <div class="col">
+                          <!-- Email -->
+                          <fieldset class="form-group">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox11">How many more followers do you want on:</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox22" value="option22">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox22">Facebook:</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox33" value="option33">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox33">Instagram</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox44" value="option44">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox44">Youtube:</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox55" value="option55">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox55">Snapchat</label>
+                              </div>
+                              <div class="form-check form-check-inline" style="left: 20px;">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox66" value="option66">
+                                <label class="form-check-label form-check-mobile-custom" for="inlineCheckbox66">Twitter</label>
+                              </div>
+                            </fieldset>
+                            <!-- Email -->
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <!-- Email -->
+
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">Write 5-10 words below that describe your personality:
+                          </h3>
+                          <div class="form-group mt-5">
+                          <textarea class="form-control" id="exampleFormControlTextarea3" rows="5"></textarea>
+                          </div>
+                          <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">Do you feel that you have an established brand for your craft? If so, please write 5 - 10 words below that describes it
+                          </h3>
+                          <div class="form-group mt-5">
+                          <textarea class="form-control" id="exampleFormControlTextarea3" rows="5"></textarea>
+                          </div>
+                          <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">What about your professional services or products make it different from others?
+                          </h3>
+                          <div class="form-group mt-5">
+                          <textarea class="form-control" id="exampleFormControlTextarea3" rows="5"></textarea>
+                          </div>
+                          <!-- Email -->
+
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">Do you have a headshot or a professional-looking selfie? If so, please attach it here.
+                          </h3>
+                          <form>
+                            <div class="form-group mt-5">
+                              <input type="file" class="form-control-file custom-file-input-custom" id="exampleFormControlFile1">
+                            </div>
+                          </form>
+                      <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">Do you have photos of your products? If so, please attach here.
+                          </h3>
+                          <form>
+                            <div class="form-group mt-5">
+                              <input type="file" class="form-control-file custom-file-input-custom" id="exampleFormControlFile1">
+                            </div>
+                          </form>
+                      <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">What is the lowest price that you charge for your products or professional services?
+                          </h3>
+                          <input type="text" class="form-control text-input-custom mt-5" placeholder="Range of Prices">
+                          <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">What is the highest price that you charge for your products or professional services?
+                          </h3>
+                          <input type="text" class="form-control text-input-custom mt-5" placeholder="Range of Prices">
+                          <!-- Email -->
+
+                        <!-- Email -->
+                        <h3 class="text text-black font-weight-bold mt-5 form-title-custom">What’s the best method of contact?
+                          </h3>
+                          <input type="text" class="form-control text-input-custom mt-5" placeholder="Phone Number">
+                          <input type="email" class="form-control text-input-custom mt-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                          <!-- Email -->
+                          <button class="btn btn-pill mt-5 mb-5 button-text-custom" type="submit">Send</button>
+                        </form>
+                        <!-- End of Form -->
+                    </div>
+                  </div>
+                  
+          </div>
+          <!-- End of Form Container  -->
+
+<!-- Footer -->
+<footer class="page-footer" style="background-color:#eee">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row h-100 align-items-center justify-content-center text-center">
+
+
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-md-0 mb-3 mt-5">
+
+            <!-- Links -->
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">DASDAS Digital</a>
+              </li>
+              <li>
+                <a href="about.html">ABOUT</a>
+              </li>
+              <li>
+                <a href="shop.html">SHOP</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-1 mb-md-0 mb-3 mt-5">
+
+            <!-- Links -->
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">PRIVACY POLICY</a>
+              </li>
+              <li>
+                <a href="#!">TERMS OF SERVICE</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 pb-5">© 2019 DASDAS DIGITAL. All Rights Reserved
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+    <!--
+        ########################################
+        ######    A1. Linked Javascript   ######
+        ######################################## 
+
+    -->
+        <!-- 
+		    This is where the main.js file is located
+	    -->
+        <script type="text/javascript" src="js/main.js"></script>
+        
+        
+        <!-- 
+		Bootstrap JS Dependency
+	    -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        
+        
+        <!--
+            ########################################
+            ######    /A1. Linked Javascript  ######
+            ######################################## 
+        -->
+
+    </body>
+</html>

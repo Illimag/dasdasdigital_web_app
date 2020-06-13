@@ -1,0 +1,491 @@
+/*
+########################################
+########################################
+######      Das Das Digital      #######
+######      Agency Web App       #######
+########################################
+########################################
+
+Welcome.
+
+*/
+
+/*
+  Header Masthead
+*/
+
+header.masthead {
+    padding-top: 5rem;
+    padding-bottom: calc(10rem - 72px);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 200, 200, 0.8)), to(rgba(200, 200, 200, 0.8))), url("../images/plain-blue-5-x-3-flag-2481-p.jpg");
+    background: linear-gradient(to bottom, rgba(200, 200, 200, 0.8) 0%, rgba(200, 200, 200, 0.8) 100%), url("../images/plain-blue-5-x-3-flag-2481-p.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  
+  header.masthead h1 {
+    font-size: 2.25rem;
+  }
+  
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 40rem;
+      padding-top: 72px;
+      padding-bottom: 0;
+    }
+    header.masthead p {
+      font-size: 1.15rem;
+    }
+    header.masthead h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    header.masthead h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  /*
+  Header Masthead-min
+  */
+
+header.masthead-min {
+  padding-top: 5rem;
+  padding-bottom: calc(10rem - 72px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 200, 200, 0.8)), to(rgba(200, 200, 200, 0.8))), url("../images/plain-blue-5-x-3-flag-2481-p.jpg");
+  background: linear-gradient(to bottom, rgba(200, 200, 200, 0.8) 0%, rgba(200, 200, 200, 0.8) 100%), url("../images/plain-blue-5-x-3-flag-2481-p.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead-min h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead-min {
+    height: 10vh;
+    min-height: 15rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.masthead-min p {
+    font-size: 1.15rem;
+  }
+  header.masthead-min h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead-min h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.text-input-custom{
+  border: 0px solid #ced4da;
+  text-align: center;
+  border-bottom: 1px solid #ced4da;
+  font-size: 1.3em;
+
+  margin-left: auto ;
+  margin-right: auto ;
+
+}
+
+.custom-file-input-custom{
+
+  right: 50%;
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 10em;
+
+}
+
+.form-check-inline{
+  display: block !important;
+  text-align: left;
+}
+
+
+/*
+  Bootstrap NAVBAR CSS override for fixed and transparency
+*/
+
+  .navbar{
+    position: absolute;
+    width: 100%;
+    background-color: transparent !important;
+    
+  }
+
+/*
+  Font Styling for NAVBAR
+*/
+
+  .navbar-brand{
+    font-weight: 700;
+  }
+
+  .nav-link{
+    font-weight: 700;
+  }
+
+  .navbar-text{
+    font-weight: 700;
+  }
+
+
+
+
+
+  
+  /*
+  Styling for Simple typer
+  */
+
+
+
+.typer {
+  color: #555;
+}
+.blink {
+  color: #aaa;
+  animation: blink 0.6s infinite alternate;
+}
+@keyframes blink {
+  0% {opacity: 1;}
+  45% {opacity: 1;}
+  55% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+
+
+.btn-pill{
+  background-color: #555;
+  border-radius: 500px;
+  padding: 1em 5em 1em 5em;
+
+
+  /*
+  Styling for Text inside Pill Button1
+  */
+  font-weight: 700;
+  color: #fff
+}
+
+
+
+  .btn-pill1{
+    background-color: #555;
+    border-radius: 500px;
+    padding: 1em 5em 1em 5em;
+    margin-right: 2em;
+
+    /*
+    Styling for Text inside Pill Button1
+    */
+    font-weight: 700;
+    color: #fff
+  }
+
+
+  .btn-pill2{
+    background-color: #555;
+    border-radius: 500px;
+    padding: 1em 5em 1em 5em;
+    margin-left: 2em;
+
+      /*
+    Styling for Text inside Pill Button2
+    */
+    font-weight: 700;
+    color: #fff
+  }
+
+
+.button-text-custom{
+  font-size: 1.3em;
+  padding: .5em 6em .5em 6em;
+}
+
+
+
+
+/* Card Styling*/
+
+.remove-border-card-custom{
+  border: 0px solid rgba(0,0,0,.125);
+}
+
+
+.card-img-top:hover{
+  box-shadow: 0px 0px 10px blue;
+  transition: 500ms ease-out .3s;
+  transition-delay: .1s;
+}
+  
+/*
+  Bootstrap NAVBAR mobile CSS override for background color and z-index
+*/
+
+.collapse.show{
+  background-color: rgb(255, 255, 255);
+  z-index: 999999;
+}
+
+/*
+  Turn shop list tab into row instead of column
+*/
+
+.shop-tab{
+  flex-direction: row !important;
+}
+
+
+.account-tab{
+  flex-direction: row !important;
+}
+
+
+.remove-border-list-group{
+  border: 0px solid rgba(0,0,0,.125);
+}
+
+
+
+
+.add-pill-btn-styling.active{
+  border-radius: 500px;
+  background-color: #555;
+  border-color: #555;
+  font-weight: 700;
+}
+
+.add-invoice-btn-styling{
+  font-size: 2em;
+}
+
+.add-invoice-btn-styling.active{
+  border-radius: 500px;
+  background-color: transparent;
+  border-color: #555;
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
+  border: 1px solid rgba(0,0,0,.8);
+}
+
+
+
+
+
+/* 
+  Form Styling
+*/
+
+.form-main-title{
+  font-size: 5rem
+}
+
+.form-undermain-title{
+  font-size: 2rem
+}
+
+
+
+/* Footer */
+
+
+
+.list-unstyled{
+  text-align: left;
+  font-weight: 700
+}
+
+
+.footer-copyright{
+  font-weight: 700
+}
+
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+.fill-width-border-custom{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+
+
+
+
+/* Media Queries*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+/* Reverse back shop list into column for mobile*/
+.shop-tab{
+  flex-direction: column !important;
+}
+.account-tab{
+  flex-direction: column !important;
+}
+.card-img-top{
+  display: none;
+}
+
+
+.btn-pill1{
+  background-color: #555;
+  border-radius: 500px;
+  padding: 1em 5em 1em 5em;
+  margin-right: 0em;
+  display: block;
+
+  /*
+  Styling for Text inside Pill Button1
+  */
+  font-weight: 700;
+  color: #fff
+}
+
+
+.btn-pill2{
+  background-color: #555;
+  border-radius: 500px;
+  padding: 1em 5em 1em 5em;
+  margin-left: 0em;
+  display: block;
+  margin-top:2em;
+
+    /*
+  Styling for Text inside Pill Button2
+  */
+  font-weight: 700;
+  color: #fff
+}
+
+.mobile-font-change{
+  font-size: 1.1em;
+}
+
+.form-main-title{
+  font-size: 4em;
+}
+
+.form-undermain-title{
+  font-size: 1.2em;
+}
+
+.form-title-custom{
+  font-size: 1.2em;
+}
+
+.text-input-custom{
+
+  font-size: 1em;
+
+
+}
+
+.custom-select{
+  width: 90%;
+}
+
+.form-check-mobile-custom{
+  font-size: .9em;
+}
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* Fixed card image bug in mobile*/
+
+.card-img-top{
+  display: inline-block;
+}
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+.full-screen-container-custom{
+  max-width:none !important;
+}
+}
