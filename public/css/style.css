@@ -17,8 +17,7 @@ Welcome.
 header.masthead {
     padding-top: 5rem;
     padding-bottom: calc(10rem - 72px);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 200, 200, 0.8)), to(rgba(200, 200, 200, 0.8))), url("../images/plain-blue-5-x-3-flag-2481-p.jpg");
-    background: linear-gradient(to bottom, rgba(200, 200, 200, 0.8) 0%, rgba(200, 200, 200, 0.8) 100%), url("../images/plain-blue-5-x-3-flag-2481-p.jpg");
+    background:url("../images/background_Test-01.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -133,6 +132,7 @@ header.masthead-min h1 {
 
   .navbar-brand{
     font-weight: 700;
+    color: rgba(66, 218, 245) !important;
   }
 
   .nav-link{
@@ -488,4 +488,10 @@ and (min-width : 1824px) {
 .full-screen-container-custom{
   max-width:none !important;
 }
+}
+
+
+
+.test{
+  color: blue;
 }
